@@ -25,5 +25,30 @@ Blocks in JavaScript do not create scope.
 
 Falsy values: false, null, 0, '', NaN, undefined; All other values are truthy
 
+
+### Expressions
+The simplest expressions are literal value: string, number, a variable, true, false, null, undefined, NaN, Infinity, an invocation expresion preceded by new,an expression wrapped in parentheses, an expression preceded by prefix or infix operator;
+
+##### The operator precedence list:
+  *Refinement and invocation* `.` `[]` `()`
+
+  *Unary operators* `delete` `new` `typeof` `+` `-` `!`
+
+  *Multiplication, division, remaider* `*` `/` `%`
+
+  *Adition/cacatenation, substration* `+` `-`
+
+  *Inequality* `>=` `<=` `><`
+
+  *Equality* `===` `==` `!==` `!=`
+
+  *Logical and* `&&`
+
+  *Logical or* `||`
+
+  *Ternary* `?:`
+
+* [Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+
 References:
 * [JavaScript The Good Parts Book](http://shop.oreilly.com/product/9780596517748.do)
