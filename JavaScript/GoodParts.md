@@ -50,5 +50,48 @@ The simplest expressions are literal value: string, number, a variable, true, fa
 
 * [Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
+## Objects
+  The simples types of JavaScript are numbers, strings, booleans, null and undefined. All other values are objects.
+  Numbers, strings and booleans are object-like in that the have methods, but they are immutable.
+
+  Object in JavaScript are  class-free.
+
+### Object Literals
+  Object literals provide a very convenient notation for creating new object values.
+
+  An object literal is a pair of culy braces.
+
+```js
+  var empty_object = {};
+
+  var raphael = {
+    name: 'Raphael Ivan',
+    age: 24
+  }
+```
+### Retrieval
+Values can be retrivied from an object by wrapping a string expression in a [] sufix. If the string expression is a string literal and if it is a legal JavaScript name and not a reserved word, then the . notation can be used instead.
+
+```js
+  raphael.name;
+  raphael['age'];
+  raphael.nickname; //undefined
+```
+
+### Reference
+  Objects are passed arround by references. They are **never** copied.
+```js
+  var a, b, c = {}; //refer to the same empty object;
+```
+
+### Prototype
+ Every object is linked to a prototype object from which it can inherit properties. All literal object are linked to Object.prototype that comes standard with JavaScript.
+
+ When you make a new object,  you can select the object that should be its prototype.
+
+ > The prototype link has no effect on updating. It is used only in retrieval.
+
+* [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
 References:
 * [JavaScript The Good Parts Book](http://shop.oreilly.com/product/9780596517748.do)
