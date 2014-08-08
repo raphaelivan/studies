@@ -91,7 +91,15 @@ Values can be retrivied from an object by wrapping a string expression in a [] s
 
  > The prototype link has no effect on updating. It is used only in retrieval.
 
+### Delete
+The delete operator can be used to remove a property from an object.
+```js
+  delete App.init;
+```
+Removing a property from an object may allow a property from prototype linkage to shine through
+
 * [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
 
 References:
 * [JavaScript The Good Parts Book](http://shop.oreilly.com/product/9780596517748.do)
